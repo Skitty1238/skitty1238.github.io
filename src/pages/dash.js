@@ -24,6 +24,167 @@ export default function Dash() {
                 </section>
 
                 {/* Project 1 */}
+                <section id="writing" className="dash-section placeholder horizontal-scroll">
+                <h2>Writing Augmentation</h2>
+
+                <p>
+                   I developed a suite of intelligent writing tools in Dash that deliver real-time, 
+                   context-aware suggestions through a dynamic sidebar and smart inline content menu. 
+                   The system learns each user's writing style over time and adapts its feedback accordingly, 
+                   offering customizable, relevant guidance to help users write faster and better.
+                </p>
+
+                <h3>Suggestions Interface</h3>
+
+                <div className="scroll-container">
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_settings.gif" alt="Suggestions Sidebar" className="feature-gif" />
+                    <p>
+                    <strong>Suggestions Sidebar</strong>
+                    <br /><br />
+                    Each text node now includes an integrated sidebar where users can define their writing goals—such as tone, style, or intended impact.
+                    The system then generates targeted suggestions aligned with these goals, making writing assistance more personalized and relevant.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash//text/text_master.gif" alt="Targeted Suggestions Highlighting" className="feature-gif" />
+                    <p>
+                    <strong>Targeted Suggestions</strong>
+                    <br /><br />
+                    Suggestions are specific, actionable, and visually anchored. Hovering over a suggestion highlights the corresponding portion of text,
+                    helping users clearly see what the suggestion refers to and how to apply it.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_inline.gif" alt="Inline Suggestions" className="feature-gif" />
+                    <p>
+                    <strong>Inline Suggestions</strong>
+                    <br /><br />
+                    Users receive brief, non-intrusive inline prompts when they pause during writing—offering guidance without breaking their flow.
+                    These can also be triggered manually using the <code>//suggest</code> command.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_bell.gif" alt="Active Suggestions" className="feature-gif" />
+                    <p>
+                        <strong>Active Suggestions</strong>
+                        <br /><br />
+                        Users can enable an active writing assistant that continuously analyzes the text in real time.
+                        <br /><br />
+                        This mode acts like a thoughtful colleague looking over your shoulder, offering critiques as you type.
+                        Each suggestion is grounded in a specific passage or sentence.
+                    </p>
+                </div>
+
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text_scrolltext.gif" alt="Suggestion Storage" className="feature-gif" />
+                    <p>
+                        <strong>Suggestion Storage and Navigation</strong>
+                        <br /><br />
+                        Active suggestions are stored in a sidebar log, keeping the writing process uninterrupted while suggestions accumulate.
+                        <br /><br />
+                        In the text, small bubbles appear next to the specific passages each suggestion targets. Clicking a bubble scrolls directly to the corresponding suggestion in the sidebar, and vice versa.
+                    </p>
+                </div>
+
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text-sugg-options.png" alt="Suggestion Resolution" className="feature-gif" />
+                    <p>
+                    <strong>Resolving Suggestions</strong>
+                    <br /><br />
+                    Users can resolve or reject each suggestion. This adaptive feedback 
+                    loop helps the assistant learn the user's preferences, 
+                    allowing it to improve over time.
+
+                    <br />
+                    <br />
+                    The auto-fix feature allows users to instantly apply suggestions with AI.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <img src="/images/Dash/text/text-suggestions-agent.png" alt="Suggestions Chatbot" className="feature-gif" />
+                    <p>
+                        <strong>Suggestions Chatbot</strong>
+                        <br /><br />
+                        Single-line suggestions may not resonate with users without further context.
+                        To address this, users can open a chat with the writing assistant to ask follow-up questions about any suggestion.
+                        <br /><br />
+                        The chatbot can explain the reasoning behind each suggestion, offer examples,
+                        and automatically fix the relevant text.
+                    </p>
+                </div>
+                {/* <div className="scroll-spacer" /> */}
+                </div>
+
+                <h3>Smart Inline Context Menu</h3>
+                <div className="scroll-container">
+
+                    <div className="feature-card">
+                    <img src="/images/Dash/ctxmenu/btnsoverview.gif" alt="Buttons Overview" className="feature-gif" />  
+                    <p>
+                    <strong>Context-Aware Action Buttons</strong>
+                    <br /><br />
+                    Each time a user selects text, the adaptive context menu surfaces 
+                    relevant actions and generates quick-edit buttons tailored to the 
+                    the content and formatting of the selection. No more scrolling through tens of irrelevant options!
+                    </p>
+                    </div>
+
+                    <div className="feature-card">
+                    <img src="/images/Dash/ctxmenu/contentbtn.gif" alt="Content Button" className="feature-gif" />
+                    <p>
+                    <strong>Content Based Buttons</strong>
+                    <br /><br />
+                    Content based suggestions show up as lightbulb buttons in the menu. 
+                    These focus on meaning-level edits—like consistency, clarity, and correctness. 
+                    <br /><br />
+                    For example, the menu may generate a “Normalize Citations” 
+                    button if it finds inconsistent referencing styles.
+                    </p>
+                    </div>
+
+                    <div className="feature-card">
+                    <img src="/images/Dash/ctxmenu/formatbtn.gif" alt="Format Button" className="feature-gif" />
+                    <p>
+                    <strong>Formatting Based Buttons</strong>
+                    <br /><br />
+                    Formatting suggestions appear as text-style icons, 
+                    helping users apply smart structural or visual adjustments 
+                    that match the intent of their writing.
+                    <br /><br />
+                    For instance, the menu might surface options like “Bold Deadlines” 
+                    in an email, “Convert to Code Block” for code-like snippets, 
+                    or “Format as Block Quote” for quoted text.
+                    </p>
+                    </div>
+
+                     <div className="feature-card">
+                    <img src="/images/Dash/ctxmenu/custombtn.gif" alt="Custom Button" className="feature-gif" />
+                    <p>
+                    <strong>Customizing Action Buttons</strong>
+                    <br /><br />
+                    Users can create, edit, and delete custom buttons for any workflow they want quick access to.
+                    Each custom button, when clicked, is implemented automatically with AI.
+                    <br /><br />
+                    Buttons can be tailored to specific tasks, like streamlining notes into a fixed format,
+                    or more general, like adding transitions, reducing wordiness, or changing tone.
+                    </p>
+                    </div>
+
+                </div>
+
+                </section>
+
+                <hr className="section-divider" />
+
+
+                {/* Project 2 */}
                 <section id="journaling" className="dash-section">
                     <h2>Journaling & Reflection</h2>
 
@@ -31,10 +192,9 @@ export default function Dash() {
                     Journaling has always been a grounding practice for me,
                     offering a way to make sense of scattered thoughts. However, 
                     existing journaling apps felt too rigid, with pre-set prompts 
-                    and lacking the broader context of my thinking: from pictures I took that
-                    I wanted to journal about, to readings I completed that I wanted to reflect on. Thus, I built a dedicated journaling system 
-                    within Dash, one that not only integrated with my broader workspace, but also
-                    helped push my thinking.
+                    and lacking the broader context of my thinking: from pictures I took, 
+                    to articles I wanted to reflect on. So, I built a dedicated journaling system 
+                    within Dash, able to integrate with my workspace while also engaging with me more deeply.
                     </p>
 
                     <h3>Features</h3>
@@ -97,106 +257,6 @@ export default function Dash() {
                     </div>
                     </div>
 
-                </section>
-
-                <hr className="section-divider" />
-
-
-                {/* Project 2 */}
-                <section id="writing" className="dash-section placeholder horizontal-scroll">
-                <h2>Writing Augmentation</h2>
-
-                <p>
-                    Building on the success of predictive prompting in my journaling system, I began exploring how similar techniques could enhance the writing process itself.
-                    I developed a suite of writing assistance features in Dash that provide real-time, context-aware suggestions—helping users express ideas more clearly and refine their writing as they go.
-                </p>
-
-                <h3>Features</h3>
-
-                <div className="scroll-container">
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text_settings.gif" alt="Suggestions Sidebar" className="feature-gif" />
-                    <p>
-                    <strong>Suggestions Sidebar</strong>
-                    <br /><br />
-                    Each text node now includes an integrated sidebar where users can define their writing goals—such as tone, style, or intended impact.
-                    The system then generates targeted suggestions aligned with these goals, making writing assistance more personalized and relevant.
-                    </p>
-                </div>
-
-                <div className="feature-card">
-                    <img src="/images/Dash//text/text_master.gif" alt="Targeted Suggestions Highlighting" className="feature-gif" />
-                    <p>
-                    <strong>Targeted Suggestions</strong>
-                    <br /><br />
-                    Suggestions are specific, actionable, and visually anchored. Hovering over a suggestion highlights the corresponding portion of text,
-                    helping users clearly see what the suggestion refers to and how to apply it.
-                    </p>
-                </div>
-
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text_inline.gif" alt="Inline Suggestions" className="feature-gif" />
-                    <p>
-                    <strong>Inline Suggestions</strong>
-                    <br /><br />
-                    Users receive brief, non-intrusive inline prompts when they pause during writing—offering guidance without breaking their flow.
-                    These can also be triggered manually using the <code>//suggest</code> command.
-                    </p>
-                </div>
-
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text_bell.gif" alt="Active Suggestions" className="feature-gif" />
-                    <p>
-                        <strong>Active Suggestions</strong>
-                        <br /><br />
-                        In addition to manual prompts and inline nudges, users can enable an active writing assistant that continuously analyzes the text in real time.
-                        <br /><br />
-                        This mode acts like a thoughtful colleague looking over your shoulder, offering critiques as you type.
-                        Each suggestion is grounded in a specific passage or sentence, focusing on elements like clarity, tone, structure, and consistency.
-                    </p>
-                </div>
-
-
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text_scrolltext.gif" alt="Suggestion Storage" className="feature-gif" />
-                    <p>
-                        <strong>Suggestion Storage and Navigation</strong>
-                        <br /><br />
-                        Active suggestions are stored in a persistent sidebar log, keeping users' writing process uninterrupted while suggestions accumulate.
-                        <br /><br />
-                        In the text itself, small bubbles appear next to the specific passages each suggestion targets. These act as visual anchors: 
-                        clicking a bubble scrolls directly to the corresponding suggestion in the sidebar, and vice versa.
-                    </p>
-                </div>
-
-
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text-sugg-options.png" alt="Suggestion Resolution" className="feature-gif" />
-                    <p>
-                    <strong>Resolving Suggestions</strong>
-                    <br /><br />
-                    Users can interact with suggestions in several ways: resolve them, reject them (to prevent similar ones in the future), 
-                    or ask AI to apply an "auto-fix", rewriting the relevant passage.
-                    <br /><br />
-                    This adaptive feedback loop helps the assistant learn the user's writing style and preferences, 
-                    allowing it to improve over time.
-                    </p>
-                </div>
-
-                <div className="feature-card">
-                    <img src="/images/Dash/text/text-suggestions-agent.png" alt="Suggestions Chatbot" className="feature-gif" />
-                    <p>
-                        <strong>Suggestions Chatbot</strong>
-                        <br /><br />
-                        Often, suggestions may seem vague, irrelevant, or even incorrect without further context.
-                        To address this, users can open a chat with the writing assistant to ask follow-up questions about any suggestion.
-                        <br /><br />
-                        The chatbot explains the reasoning behind the feedback, offers examples, 
-                        and allows users to understand their own writing patterns through natural conversation.
-                    </p>
-                </div>
-                {/* <div className="scroll-spacer" /> */}
-                </div>
                 </section>
 
                 <hr className="section-divider" />
